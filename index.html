@@ -7,46 +7,15 @@
     <tittle>Resgatar valor input</tittle>
 </head>
 <body>
-    <div class="elementor-form-fields-wrapper">
-
-    <form  id="indicou">
-        
-        <label id="form-field-name">
-        <input type="text" name="name"  placeholder="Digite o seu nome">
-        </label>
-  
-        <label id="form-field-field_028e28a">
-        <input type="email" name="e-mail" placeholder="Digite o seu e-mail">
-        </label> 
-          
-        <label id="form-field-field_b9a4b1a">
-        <input type="number"  name="cpf" placeholder="Digite o seu cpf">
-        </label>
-        
-        <label id="form-field-email">
-        <input type="tel" name="tel" placeholder="Digite o seu telefone">
-        </label>
-        
-        <label id="form-field-field_8bd6e9a">
-        <input type="number" name="pix" placeholder="Digite o seu numero de pix">
-        </label>
-        
-        <label id="form-field-field_c5ab7cf">
-        <input type="text" name="name"  placeholder="Digite o nome do seu amigo">
-        </label>
-
-        <label id="form-field-field_60daaee">
-        <input type="email" name="email" placeholder="Digite o email do seu amigo">
-        </label>
-
-        <label id="form-field-field_f1b569e">
-        <input type="tel" name="tel" placeholder="Digite o telefone do seu amigo">
-    </label>
-
-        <input type="submit" class="elementor-button" value="submit" name="submit">
-
+    <form onsubmit="cadastroUsuario()">
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="text">
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input name="nome" id="nome" type="text">
+        <br><br>
+        <button type="submit">Enviar</button>
     </form>
-</div>
     <script src="js/script.js" defer></script>
 </body>
 </html>
