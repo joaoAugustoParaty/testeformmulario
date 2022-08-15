@@ -11,8 +11,8 @@ form.addEventListener('submit', function(e) {
       dadosForm.append("Width", screen.width);
       dadosForm.append("Height", screen.height);
       dadosForm.append("pixelRatio", window.devicePixelRatio);
-      dadosForm.append("nome", document.getElementsById('username')[0]);
-      dadosForm.append("telefone", document.getElementsById('tel')[0]);
+      dadosForm.append("nome", document.getElementById('username'));
+      dadosForm.append("telefone", document.getElementById('tel'));
       var url = 'https://webhook.site/45ba7968-42c2-4979-a24c-92cd607a876d';
 
       var pairs = window.location.search.substring(1).split("&"), pair,i;
